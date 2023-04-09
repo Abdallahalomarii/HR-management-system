@@ -34,12 +34,12 @@ Employee.prototype.salary = function () {
 
     }
     let netsalary =  rndsalary -(rndsalary * tax/100);
-    return netsalary;
+    return Math.floor(netsalary);
 }
 
 Employee.prototype.render = function()
 {
-    document.write(`<span class="Name"><h2> Name: ${this.Fullname} </span> \t <span class="Salary"> Salary: ${this.salary()}</h2></span>`);
+    document.write(`<span class="Name"><h2> Name: ${this.Fullname} </span> \t <span class="Salary"> Salary: ${this.salary()}$</h2></span>`);
     
 }
 
