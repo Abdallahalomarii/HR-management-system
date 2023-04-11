@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Sarabun', sans-serif;
+}
+body
+{
+    background-color: #123;
+    color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+header
+{
+    top: 0;
+    padding: 1em;
+    background-color: beige;
+    color: #f2f2f2;
+    display: inline-block;
+    width: 100%;
+    height: 4.3em;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+header a
+{
+    color: #123;
+    text-decoration: none;
+padding: 2em;
+}
+header a:hover
+{
+    color : #1DA1F2;
+}
+main
+{
+    margin-top: 5rem;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+form{
+    width: 25%;
+  min-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(0, 0,0, 0.7);
+  
+  margin-top: -10px;
+  padding: 2.5rem;
+  border-radius: 0.25em;
+}
+label {
+    display: block;
+    text-align: left;
+    margin: 0.5em 0.5em;
+    font-size: 1.25rem;
+    color: #fff;
+  }
+  input,
+select{
+  width: 100%;
+  min-height: 2rem;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  border: 1px solid #111;
+  color: #111;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+#container
+{
+    margin-bottom: 5rem;
+}
+.employee
+{
+    background-color: #1c252b;
+    margin: 2rem;
+    padding: 2rem;
+    position: relative;
+    margin-bottom:5rem ;
+    width: 60%;
+    height: 60%;
+}
+.employee:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.img-content
+{
+    display: flex;
+    justify-content: center;
+}
+img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: beige;
+    color: #123;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+
+footer a
+{
+    color: #123;
+    text-decoration: none;
+    padding: 2em;
+    font-size: 32px;
+
+}
+.fa-instagram:hover
+{
+    background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, #fdf497 5%, #fd5949 45%
+    ,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.fa-facebook:hover
+{
+    color:#3b5998;
+
+
+}
+.fa-twitter:hover{
+color:#1DA1F2;
+
+
+}
+@media screen and (min-width: 992px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    #container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .employee{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .employee .text-light{
+        width: 50%;
+    }
+}

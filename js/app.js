@@ -5,7 +5,7 @@ function Employee(EmployeeID, Fullname, Department, Level) {
     this.Fullname = Fullname;
     this.Department = Department;
     this.Level = Level;
-    this.ImageURL = `./assets/${this.name}.png`;
+    this.ImageURL = `./assets/${this.Fullname}.png`;
     
 }
 Employee.prototype.salary = function () {
