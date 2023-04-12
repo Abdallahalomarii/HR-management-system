@@ -6,10 +6,10 @@ form.addEventListener('submit', addNewEmployee)
 
 function Employee(Fullname, Department, Level,imageURL) {
     this.EmployeeID = 0;
-    this.Fullname = Fullname;
+    this.Fullname = Fullname[0] +" "+ Fullname[1];
     this.Department = Department;
     this.Level = Level;
-    this.imageURL = `../assets/${this.Fullname}.png`;
+    this.imageURL = `../assets/${Fullname[0]}.png`;
     this.salary = 0;
     AllEmployee.push(this);
 }
@@ -60,8 +60,9 @@ Employee.prototype.render =function()
 
 
     const employee = document.createElement('div');
-    employee.setAttribute('class', 'employee');
-    employee.setAttribute('id',`${this.Department}`)
+    // employee.setAttribute('class', 'employee');
+    // employee.setAttribute('class',`${this.Department}`)
+    employee.classList.add('employee',`${this.Department}`);
     container.appendChild(employee);
 
     const imgEl = document.createElement('img');
@@ -95,11 +96,13 @@ function addNewEmployee(event)
 {
     event.preventDefault();
     let fname = event.target.fname.value;
+    let lname =event.target.lastname.value;
     let department=event.target.department.value;
     let Level =event.target.level.value;
     let imageURL = event.target.imageURL.value;
-    
-    let newEmployee = new Employee(fname,department,Level,imageURL);
+    let fullname=[];
+    fullname.push(fname,lname);
+    let newEmployee = new Employee(fullname,department,Level,imageURL);
     newEmployee.UniqueID();
     newEmployee.netSalary();
 
