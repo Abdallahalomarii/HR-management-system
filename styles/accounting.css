@@ -13,14 +13,13 @@ body
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-    font-style: normal;
     text-align: center;
 }
 header
 {
     top: 0;
     padding: 1em;
-    background-color: beige;
+    background-color: #A5D7E8;
     color: #f2f2f2;
     display: inline-block;
     width: 100%;
@@ -43,17 +42,18 @@ header a:hover
 }
 main
 {
-    margin-top: 5rem;
     padding: 0;
     width: 100%;
     height: 100%;
     
 }
 form{
+
+    margin-top: 5rem;
     width: 25%;
   min-width: 500px;
   margin: 0 auto;
-  background-color: rgba(0, 0,0, 0.7);
+  background-color: rgba(0, 0,0, 0.5);
   
   margin-top: -10px;
   padding: 2.5rem;
@@ -71,6 +71,7 @@ select{
   width: 100%;
   min-height: 2rem;
   font-weight: 400;
+  font-family: sans-serif !important;
   background-color: #f2f2f2;
   border: 1px solid #111;
   color: #111;
@@ -78,6 +79,19 @@ select{
   border-radius: 0.5em;
   margin-bottom: 0.2rem;
   font-size: 1rem;
+  outline: none;
+}
+input[type=text]:focus{
+    
+    outline: 1px solid #285AEB;
+}
+input[type="submit"]{
+    width: 80%;
+    background-color: #A5D7E8;
+    font-family: sans-serif;
+    padding: 1rem;
+    margin: 1rem auto;
+
 }
 #container
 {
@@ -88,8 +102,9 @@ select{
     background-color: #1c252b;
     margin: 2rem;
     padding: 2rem;
+    font-size: 17px;
     position: relative;
-    margin-bottom:5rem ;
+    margin-bottom:7rem ;
     width: 60%;
     height: 60%;
 }
@@ -109,13 +124,14 @@ img
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 footer
 {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: beige;
+    background-color: #A5D7E8;
     color: #123;
     display: flex;
     flex-direction: row;
@@ -144,8 +160,49 @@ footer a
     -webkit-text-fill-color:transparent;
 
 }
-
-
+.colors-section
+{
+    top: 0;
+    left: 0;
+    position: relative;
+    margin: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+.circle
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+.Administration
+{
+    background-color: #19376D;
+}
+.Marketing
+{
+    background-color: #576CBC;
+}
+.Development
+{
+    background-color:#0B2447 ;
+}
+.Finance
+{
+background-color: #66347F;
+}
+.text-color
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:2rem ;
+    vertical-align: middle;
+}
 .fa-facebook:hover
 {
     color:#3b5998;
@@ -157,6 +214,7 @@ color:#1DA1F2;
 
 
 }
+
 @media screen and (min-width: 992px){
     #container{
         display: grid;
@@ -173,7 +231,34 @@ color:#1DA1F2;
         margin-right: 1rem;
         margin-left: 1rem;
     }
-    .employee .text-light{
+    .employee {
         width: 50%;
+    }
+}
+@media screen and (min-width:555px) {
+    .employee{
+        margin-bottom: 12rem;
+    }
+    #container
+    {
+       margin: 0 auto;
+       text-align: center;
+       display: grid;
+       justify-items: center;
+
+    }
+    .circle
+    {
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width:1370px) {
+    .text-color
+    {
+        overflow: hidden;
+    }
+    .circle
+    {
+        overflow: hidden;
     }
 }

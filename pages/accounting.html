@@ -18,13 +18,34 @@
         <a href="#">Accounting</a>
     </header>
     <main>
+        <div class="colors-section">
+            <div  class="circle Administration">
+                <div class="text-color">Administration</div>
+            </div>
+            <div class="circle Marketing">
+                <div class="text-color">Marketing</div> 
+            </div>
+            <div class="circle Development">
+                <div class="text-color">Development</div>
+            </div>
+            <div class="circle Finance">
+                <div class="text-color">Finance</div>
+            </div>
+        </div>
+        </div>
         <form id="form-account">
             <div class="form-title">
                 <h2>HR-accounting-form</h2>
             <label for="fullname">
-                Fullname
-            <input type="text" name="fname" id="fname">
+                FirstName
+            <input type="text" name="fname" id="fname" placeholder="enter your first name">
+            
         </label>
+        <label for="lastname">
+            LastName
+        <input type="text" name="lastname" id="lastname" placeholder="enter you lastname">
+        
+    </label>
         <label for="department">
             Department
             <select name="department" id="department">
@@ -45,7 +66,7 @@
             </select>
         </label>
         <label for="imageURL">Image
-            <input type="text" name="imageURL" id="imageURL">
+            <input type="text" name="imageURL" id="imageURL" disabled>
         </label>
             <input type="submit" value="submit" >
         </div>
