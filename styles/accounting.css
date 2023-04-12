@@ -235,7 +235,7 @@ color:#1DA1F2;
         width: 50%;
     }
 }
-@media screen and (min-width:555px) {
+@media screen and (min-width:500px) {
     .employee{
         margin-bottom: 12rem;
     }
