@@ -6,7 +6,7 @@ and final resault printed on index.html using document.write().
 ## now we are working on accounting page 
 ### all employee can be added dynamic 
 ### and all department has a uniqe color 
-### and has for images for now with names :
+### and has four images for now with names :
 * abdallah
 * tamara
 * ali 
