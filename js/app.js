@@ -54,27 +54,27 @@ function randomID() {
 }
 
 function render() {
- 
-    
 
-    
+
+
+
 
     const container = document.getElementById('container');//parent 
-   
+
 
     getEmployee();
-   
+
     if (AllEmployee === null) {
         AllEmployee = [];
         alert('please you have to fill all fields');
     }
     else {
-        
+
         AllEmployee.forEach(item => {
 
             const employee = document.createElement('div');
             // employee.classList.add('employee', `${item.Department}`);
-            employee.classList.add('employee',`${item.Department}`);
+            employee.classList.add('employee', `${item.Department}`);
             container.appendChild(employee);
 
 
@@ -133,20 +133,6 @@ function getEmployee() {
     let dataFromStorege = JSON.parse(JsonArray);
     AllEmployee = dataFromStorege;
 }
-
-
-
-
-
-function rendernaruto()
-{
-    AllEmployee[4].imageURL="../assets/naruto.png";
-    
-}
-
-
-
-
 getEmployee();
 render();
 
