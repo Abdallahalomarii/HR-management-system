@@ -12,4 +12,3 @@ and final resault printed on index.html using document.write().
 * ali 
 * rami
 ## these names should be added in first name input
-
