@@ -11,12 +11,10 @@ function Employee(Fullname, Department, Level, imageURL) {
     this.Fullname = Fullname[0] + " " + Fullname[1];
     this.Department = Department;
     this.Level = Level;
-    this.imageURL = `../assets/${Fullname[0]}.png`;
+    this.imageURL = `./assets/${Fullname[0]}.png`;
     this.salary = 0;
     AllEmployee.push(this);
-
 }
-
 Employee.prototype.netSalary = function () {
 
 
