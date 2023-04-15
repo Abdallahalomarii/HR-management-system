@@ -1,28 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f9b49e7bf3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Sarabun:wght@100&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/template.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Accounting</title>
 </head>
+
 <body>
     <header>
         <a href="#">Home</a>
         <a href="./pages/accounting.html">Accounting</a>
     </header>
     <main>
-        <script src="./js/app.js"></script>
+        <div class="colors-section">
+            <div class="circle Administration">
+                <div class="text-color">Administration</div>
+            </div>
+            <div class="circle Marketing">
+                <div class="text-color">Marketing</div>
+            </div>
+            <div class="circle Development">
+                <div class="text-color">Development</div>
+            </div>
+            <div class="circle Finance">
+                <div class="text-color">Finance</div>
+            </div>
+        </div>
+        </div>
+        <div class="maincontainer">
+
+
+            <form id="form-account">
+                <div class="form-title">
+                    <h2>HR-accounting-form</h2>
+                    <label for="fullname">
+                        FirstName
+                        <input type="text" name="fname" id="fname" placeholder="enter your first name">
+
+                    </label>
+                    <label for="lastname">
+                        LastName
+                        <input type="text" name="lastname" id="lastname" placeholder="enter you lastname">
+
+                    </label>
+                    <label for="department">
+                        Department
+                        <select name="department" id="department" required>
+                            <option value="">select one</option>
+                            <option value="Administration">Administration</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Development">Development</option>
+                            <option value="Finance">Finance</option>
+                        </select>
+                    </label>
+                    <label for="level">
+                        Level
+                        <select name="level" id="level" required>
+                            <option value="">select one</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Mid-Senior">Mid-Senior</option>
+                            <option value="Senior">Senior</option>
+                        </select>
+                    </label>
+                    <label for="imageURL">Image
+                        <input type="text" name="imageURL" id="imageURL" disabled>
+                    </label>
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+        <section id="container">
+
+        </section>
     </main>
+
     <footer>
         <h2>&copy; All right reserved </h2>
         <div class="social">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
+    <!-- <script src="../js/app.js"></script> -->
+    <script src="./js/app.js"></script>
+
+
+
 </body>
+
 </html>
