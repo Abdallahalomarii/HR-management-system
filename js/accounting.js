@@ -13,14 +13,13 @@ function renderTable() {
     else {
         const container = document.getElementById('container');
 
-        const header =document.createElement('h1');
-        header.textContent="Employess Table";
+        const header = document.createElement('h1');
+        header.textContent = "Employess Table";
         container.appendChild(header);
 
-        git
-        
+
         const divEl = document.createElement('div');
-        divEl.setAttribute('class','tableContainer');
+        divEl.setAttribute('class', 'tableContainer');
         container.appendChild(divEl);
 
         const table = document.createElement('table');
@@ -86,17 +85,17 @@ function totalSalaryForAllEmployee() {
     AllEmployee.forEach(item => {
         totalSalary += item.salary;
     });
-   return  thirdColumnArray.push(totalSalary + '$');
+    return thirdColumnArray.push(totalSalary + '$');
 }
 // get the average salary for all employees in all departments
 function averageSalaryForAllEmployees() {
     let averrageSalary = 0;
     AllEmployee.forEach(item => {
         averrageSalary += item.salary
-        
+
     });
     averrageSalary = averrageSalary / AllEmployee.length;
-   return  fourthColumnArray.push(averrageSalary.toFixed(2));
+    return fourthColumnArray.push(averrageSalary.toFixed(2));
 }
 
 function eachEmployeeDepartment() {
@@ -121,7 +120,7 @@ function eachEmployeeDepartment() {
             financeCount++;
             financeSalary += emp.salary;
         }
-parseInt
+        parseInt
     });
 
     administrationDepartmentAverage = administrationSalary / administrationCount;
