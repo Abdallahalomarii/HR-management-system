@@ -1,23 +1,22 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Gloria Hallelujah', cursive;
     font-family: 'Sarabun', sans-serif;
 }
-body
-{
+
+body {
     background-color: #123;
     color: #f2f2f2;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-    font-style: normal;
     text-align: center;
 }
-header
-{
+
+header {
     top: 0;
     padding: 1em;
     background-color: #A5D7E8;
@@ -29,44 +28,27 @@ header
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    
+
 }
-header a
-{
+
+header a {
     color: #123;
     text-decoration: none;
-padding: 2em;
+    padding: 2em;
 }
-header a:hover
-{
-    color : #1DA1F2;
+
+header a:hover {
+    color: #1DA1F2;
 }
-main
-{
-    margin-top: 5rem;
+
+main {
     padding: 0;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;    
+    height: 100%;
+
 }
-main h2 
-{
-    margin-top: 1em;
-}
-.Name
-{
-    margin-right: 1em;
-    margin-left: 1em;
-}
-.Salary
-{
-    margin:10px;
-    
-    
-}
-footer
-{
+
+footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -81,34 +63,21 @@ footer
     text-transform: uppercase;
 
 }
-
-footer a
-{
+footer a {
     color: #123;
     text-decoration: none;
     padding: 2em;
     font-size: 32px;
-
 }
-.fa-instagram:hover
-{
-    background: radial-gradient(circle at 30% 107%, 
-    #fdf497 0%, #fdf497 5%, #fd5949 45%
-    ,#d6249f 60%,#285AEB 90%);
+.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-
+    -webkit-text-fill-color: transparent;
 }
-
-
-.fa-facebook:hover
-{
-    color:#3b5998;
-
-
+.fa-facebook:hover {
+    color: #3b5998;
 }
-.fa-twitter:hover{
-color:#1DA1F2;
-
-
+.fa-twitter:hover {
+    color: #1DA1F2;
 }

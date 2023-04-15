@@ -1,124 +1,107 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-family: 'Sarabun', sans-serif;
+
+.maincontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
-body
+form h2
 {
-    background-color: #123;
-    color: #f2f2f2;
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 500;
-    text-align: center;
+    text-transform: capitalize;
 }
-header
-{
-    top: 0;
-    padding: 1em;
-    background-color: #A5D7E8;
-    color: #f2f2f2;
-    display: inline-block;
-    width: 100%;
-    height: 4.3em;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    
-}
-header a
-{
-    color: #123;
-    text-decoration: none;
-padding: 2em;
-}
-header a:hover
-{
-    color : #1DA1F2;
-}
-main
-{
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    
-}
-form{
+form {
 
     margin-top: 5rem;
     width: 25%;
-  min-width: 500px;
-  margin: 0 auto;
-  background-color: rgba(0, 0,0, 0.5);
-  
-  margin-top: -10px;
-  padding: 2.5rem;
-  border-radius: 0.25em;
+    min-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: -10px;
+    padding: 2.5rem;
+    border-radius: 0.25em;
 }
+
 label {
     display: block;
     text-align: left;
     margin: 0.5em 0.5em;
     font-size: 1.25rem;
     color: #fff;
-  }
-  input,
-select{
-  width: 100%;
-  min-height: 2rem;
-  font-weight: 400;
-  font-family: sans-serif !important;
-  background-color: #f2f2f2;
-  border: 1px solid #111;
-  color: #111;
-  padding: 0.5rem;
-  border-radius: 0.5em;
-  margin-bottom: 0.2rem;
-  font-size: 1rem;
-  outline: none;
 }
-input[type=text]:focus{
-    
+select option
+{
+    background-color: #1c252b;
+    color :#fff;    
+}
+input,
+select {
+    width: 100%;
+    min-height: 2rem;
+    font-weight: 400;
+    font-family: sans-serif !important;
+    background-color: #f2f2f2;
+    border: 1px solid #111;
+    color: #111;
+    padding: 0.5rem;
+    border-radius: 0.5em;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    outline: none;
+
+}
+
+input[type=text]:focus {
+
     outline: 1px solid #285AEB;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     width: 80%;
     background-color: #A5D7E8;
     font-family: sans-serif;
     padding: 1rem;
     margin: 1rem auto;
+    cursor: pointer;
 
 }
-#container
+input[type="submit"]:hover
 {
+    background-color: #3E6D9C;
+    color: #f2f2f2;
+    transition: 0.5s ease;
+}   
+
+input[disabled]
+{
+    background-color: #696969;
+    cursor: not-allowed;
+}
+
+#container {
     margin-bottom: 5rem;
 }
-.employee
-{
+
+.employee {
     background-color: #1c252b;
     margin: 2rem;
     padding: 2rem;
     font-size: 17px;
     position: relative;
-    margin-bottom:7rem ;
+    margin-bottom: 7rem;
     width: 60%;
     height: 60%;
 }
-.employee:hover
-{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+.employee:hover {
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.8);
+    transition: 0.5s all ease;
 }
-.img-content
-{
+
+.img-content {
     display: flex;
     justify-content: center;
 }
-img
-{
+
+img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -126,42 +109,10 @@ img
     justify-content: center;
     margin-bottom: 1.5rem;
 }
-footer
-{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #A5D7E8;
-    color: #123;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1em;
-    text-align: center;
-    font-size: 18px;
-    text-transform: uppercase;
 
-}
 
-footer a
-{
-    color: #123;
-    text-decoration: none;
-    padding: 2em;
-    font-size: 32px;
 
-}
-.fa-instagram:hover
-{
-    background: radial-gradient(circle at 30% 107%, 
-    #fdf497 0%, #fdf497 5%, #fd5949 45%
-    ,#d6249f 60%,#285AEB 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-
-}
-.colors-section
-{
+.colors-section {
     top: 0;
     left: 0;
     position: relative;
@@ -169,96 +120,99 @@ footer a
     width: 30%;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    
+    justify-content: space-between;
+
 }
-.circle
-{
+
+.circle {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    
+
 }
-.Administration
-{
+
+.Administration {
     background-color: #19376D;
 }
-.Marketing
-{
+
+.Marketing {
     background-color: #576CBC;
 }
-.Development
-{
-    background-color:#0B2447 ;
+
+.Development {
+    background-color: #0B2447;
 }
-.Finance
-{
-background-color: #66347F;
+
+.Finance {
+    background-color: #66347F;
 }
-.text-color
-{
+
+.text-color {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left:2rem ;
+    margin-left: 2rem;
     vertical-align: middle;
 }
-.fa-facebook:hover
-{
-    color:#3b5998;
 
-
-}
-.fa-twitter:hover{
-color:#1DA1F2;
-
-
-}
-
-@media screen and (min-width: 992px){
-    #container{
+@media screen and (min-width: 992px) {
+    #container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
+
+}
+
+@media screen and (max-width: 1020px) {
+    .maincontainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
     
 }
-@media screen and (min-width: 1200px){
-    #container{
+
+@media screen and (min-width: 1200px) {
+    #container {
         grid-template-columns: repeat(3, 1fr);
     }
-    .employee{
+
+    .employee {
         margin-right: 1rem;
         margin-left: 1rem;
     }
+
     .employee {
         width: 50%;
     }
 }
+
 @media screen and (min-width:500px) {
-    .employee{
+    .employee {
         margin-bottom: 12rem;
     }
-    #container
-    {
-       margin: 0 auto;
-       text-align: center;
-       display: grid;
-       justify-items: center;
+
+    #container {
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        justify-items: center;
 
     }
-    .circle
-    {
+
+    .circle {
         margin-bottom: 2rem;
     }
 }
+
 @media screen and (max-width:1370px) {
-    .text-color
-    {
+    .text-color {
         overflow: hidden;
     }
-    .circle
-    {
+
+    .circle {
         overflow: hidden;
     }
 }
+
