@@ -135,20 +135,3 @@ function getEmployee() {
 }
 getEmployee();
 render();
-
-function addNewEmployee(event)
-{
-    event.preventDefault();
-    let fname = event.target.fname.value;
-    let lname =event.target.lastname.value;
-    let department=event.target.department.value;
-    let Level =event.target.level.value;
-    let imageURL = event.target.imageURL.value;
-    let fullname=[];
-    fullname.push(fname,lname);
-    let newEmployee = new Employee(fullname,department,Level,imageURL);
-    newEmployee.UniqueID();
-    newEmployee.netSalary();
-
-    newEmployee.render();
-}

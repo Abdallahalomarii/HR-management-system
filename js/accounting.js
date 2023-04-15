@@ -120,7 +120,7 @@ function eachEmployeeDepartment() {
             financeCount++;
             financeSalary += emp.salary;
         }
-        parseInt
+        
     });
 
     administrationDepartmentAverage = administrationSalary / administrationCount;
